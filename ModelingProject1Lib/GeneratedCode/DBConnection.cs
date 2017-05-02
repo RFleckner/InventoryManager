@@ -11,7 +11,7 @@ using System.Text;
 
 public class DBConnection
 {
-	public virtual string connString
+	public virtual string CONNECTION_STRING
 	{
 		get;
 		set;

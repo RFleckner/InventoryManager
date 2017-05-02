@@ -11,67 +11,95 @@ using System.Text;
 
 public class Orders : DBConnection
 {
-	private int orderId
+	public virtual int Order_Id
 	{
 		get;
 		set;
 	}
 
-	private string orderDate
+	public virtual DateTime Order_Date
 	{
 		get;
 		set;
 	}
 
-	private string employee
+	public virtual string Employee
 	{
 		get;
 		set;
 	}
 
-	private string shippingAddress
+	public virtual string Shipping_Address
 	{
 		get;
 		set;
 	}
 
-	private string shipCity
+	public virtual string Ship_City
 	{
 		get;
 		set;
 	}
 
-	private string shipState
+	public virtual string Ship_State
 	{
 		get;
 		set;
 	}
 
-	private int zip
+	public virtual int Zip
 	{
 		get;
 		set;
 	}
 
-	private Double orderTota
+	public virtual double Order_Total
 	{
 		get;
 		set;
 	}
 
-	private string status
+	public virtual string Status
 	{
 		get;
 		set;
 	}
 
-	private string closedDate
+	public virtual DateTime Closed_Date
 	{
 		get;
 		set;
 	}
 
 	public virtual void ToString()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void CompleteOrder()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	private Orders()
+	{
+	}
+
+	public Orders()
+	{
+	}
+
+	public virtual void Save()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void Get(int Order_Id)
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void GetAll()
 	{
 		throw new System.NotImplementedException();
 	}

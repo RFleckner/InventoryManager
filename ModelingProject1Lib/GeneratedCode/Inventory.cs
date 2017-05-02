@@ -11,37 +11,37 @@ using System.Text;
 
 public class Inventory : DBConnection
 {
-	private int onHand
+	public virtual int On_Hand
 	{
 		get;
 		set;
 	}
 
-	private int inventory_id
+	public virtual int Inventory_id
 	{
 		get;
 		set;
 	}
 
-	private string product
+	public virtual string Product
 	{
 		get;
 		set;
 	}
 
-	private int reorderLevel
+	public virtual int Reorder_Level
 	{
 		get;
 		set;
 	}
 
-	private int reorderQuantity
+	public virtual int Reorder_Quantity
 	{
 		get;
 		set;
 	}
 
-	private int onOrder
+	public virtual int On_Order
 	{
 		get;
 		set;
@@ -52,27 +52,70 @@ public class Inventory : DBConnection
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void AddNewItem()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void ModifyItemDetails()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void ModifyItemStock()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void RemoveItem()
-	{
-		throw new System.NotImplementedException();
-	}
-
 	public virtual void setFiltersToOrder()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public Inventory()
+	{
+	}
+
+	private Inventory()
+	{
+	}
+
+	public virtual void ModifyItemStock(int newStockValue)
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void UpdateReorderQuantity()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void UpdateReorderLevel()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void UpdateOnOrderQuantity()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void UpdateProductLocation()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void Save()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void Get(int( Inventory_Id)
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void GetAll()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void GetWithCode(string Product_Code)
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void GetWithName(string Product)
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void Get(string Product_Location)
 	{
 		throw new System.NotImplementedException();
 	}

@@ -11,55 +11,71 @@ using System.Text;
 
 public class PurchaseOrderDetails : DBConnection
 {
-	private int purchaseOrderDetailId
+	public virtual int PurchaseOrderDetails_Id
 	{
 		get;
 		set;
 	}
 
-	private int purchaseOrderNumber
+	public virtual int Purchase_Order_Number
 	{
 		get;
 		set;
 	}
 
-	private string product
+	public virtual string Product
 	{
 		get;
 		set;
 	}
 
-	private int quanity
+	public virtual int Quantity
 	{
 		get;
 		set;
 	}
 
-	private Double unitPrice
+	public virtual double Unit_Price
 	{
 		get;
 		set;
 	}
 
-	private Double extendedPrice
-	{
-		get;
-		set;
-	}
-
-	private string dateReceived
-	{
-		get;
-		set;
-	}
-
-	private string status
+	public virtual double Extended_Price
 	{
 		get;
 		set;
 	}
 
 	public virtual void ToString()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public PurchaseOrderDetails()
+	{
+	}
+
+	private PurchaseOrderDetails()
+	{
+	}
+
+	public virtual void Save()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void Get(int PurchaseOrderDetails_Id)
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void GetAll()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void GetAllAt(int Purchase_Order_Number)
 	{
 		throw new System.NotImplementedException();
 	}

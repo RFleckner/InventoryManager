@@ -50,7 +50,9 @@
     <Compile Include="GeneratedCode\Order Details.cs" />
     <Compile Include="GeneratedCode\Order Processing.cs" />
     <Compile Include="GeneratedCode\Orders.cs" />
+    <Compile Include="GeneratedCode\OrderStatus.cs" />
     <Compile Include="GeneratedCode\Product.cs" />
+    <Compile Include="GeneratedCode\ProductLocations.cs" />
     <Compile Include="GeneratedCode\Purchase Order.cs" />
     <Compile Include="GeneratedCode\PurchaseOrderDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

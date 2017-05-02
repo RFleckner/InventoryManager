@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class OrderProcessing
+public class Order Processing
 {
 	private string fileName
 	{
@@ -32,8 +32,8 @@ public class OrderProcessing
 		throw new System.NotImplementedException();
 	}
 
-    public override string ToString()
-    {
+	public virtual void ToString()
+	{
 		throw new System.NotImplementedException();
 	}
 

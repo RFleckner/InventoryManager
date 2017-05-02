@@ -9,46 +9,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Category : DBConnection
+public class OrderStatus : DBConnection
 {
-	private string Category_Text
+	public virtual int OrderStatus_Id
 	{
 		get;
 		set;
 	}
 
-	private int Category_Id
+	public virtual string Status_Text
 	{
 		get;
 		set;
-	}
-
-	public virtual void ToString()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public Category(string Category_Text)
-	{
-	}
-
-	private Category(int Category_Id, string Category_Text)
-	{
-	}
-
-	public virtual void Save()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void Get(int Category_Id)
-	{
-		throw new System.NotImplementedException();
 	}
 
 	public virtual void GetAll()
 	{
 		throw new System.NotImplementedException();
+	}
+
+	public OrderStatus()
+	{
+	}
+
+	private OrderStatus()
+	{
 	}
 
 }

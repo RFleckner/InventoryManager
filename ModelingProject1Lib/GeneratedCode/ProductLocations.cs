@@ -9,63 +9,38 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Order Details : DBConnection
+public class ProductLocations : DBConnection
 {
-	public virtual int OrderDetails_Id
+	public virtual int Location_Id
 	{
 		get;
 		set;
 	}
 
-	public virtual int Order_Id
+	public virtual string Product_Location
 	{
 		get;
 		set;
 	}
 
-	public virtual string Product
+	public virtual int Product_Quantity
 	{
 		get;
 		set;
 	}
 
-	public virtual int Quantity
+	public virtual string Product_Code
 	{
 		get;
 		set;
 	}
 
-	public virtual double Unit_Price
+	public ProductLocations()
 	{
-		get;
-		set;
 	}
 
-	public virtual Double Extended_Price
+	private ProductLocations()
 	{
-		get;
-		set;
-	}
-
-	public virtual string Status
-	{
-		get;
-		set;
-	}
-
-	public virtual void ToString()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void OrderDetails()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	private void OrderDetails()
-	{
-		throw new System.NotImplementedException();
 	}
 
 	public virtual void Save()
@@ -73,7 +48,7 @@ public class Order Details : DBConnection
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void Get(int OrderDetails_Id)
+	public virtual void Get(int Location_Id)
 	{
 		throw new System.NotImplementedException();
 	}
@@ -83,7 +58,17 @@ public class Order Details : DBConnection
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void GetAllAt(int Order_Id)
+	public virtual void ToString()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void ChangeItemAtLocation(int Location_Id, string Product_Code)
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void RemoveItemAtLocation(int Location_Id)
 	{
 		throw new System.NotImplementedException();
 	}

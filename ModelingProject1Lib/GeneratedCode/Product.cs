@@ -11,43 +11,43 @@ using System.Text;
 
 public class Product : DBConnection
 {
-	private string productName
+	public virtual string Product_Name
 	{
 		get;
 		set;
 	}
 
-	private string productCode
+	public virtual string Product_Code
 	{
 		get;
 		set;
 	}
 
-	private bool discontine
+	public virtual bool Discontinue
 	{
 		get;
 		set;
 	}
 
-	private string category
+	public virtual string Category
 	{
 		get;
 		set;
 	}
 
-	private int productId
+	public virtual int Product_Id
 	{
 		get;
 		set;
 	}
 
-	private Double listPrice
+	public virtual double List_Price
 	{
 		get;
 		set;
 	}
 
-	private Double unitCost
+	public virtual double Unit_Cost
 	{
 		get;
 		set;
@@ -60,6 +60,40 @@ public class Product : DBConnection
 
 	public Product()
 	{
+	}
+
+	private Product()
+	{
+	}
+
+	public virtual void Save()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void Get(int Product_Id)
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void GetAll()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void DiscontinueItem()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void UpdateListPrice(int Product_Id, double List_Price)
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void ChangeProductCategory(int Product_Id, string Category)
+	{
+		throw new System.NotImplementedException();
 	}
 
 }

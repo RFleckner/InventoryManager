@@ -9,64 +9,112 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class PurchaseOrder : DBConnection
+public class Purchase Order : DBConnection
 {
-	private int purchaseOrderDetailId
+	public virtual int PurchaseOrders_Id
 	{
 		get;
 		set;
 	}
 
-	private string orderDate
+	public virtual DateTime Order_Date
 	{
 		get;
 		set;
 	}
 
-	private string createdBy
+	public virtual string Created_By
 	{
 		get;
 		set;
 	}
 
-	private string createdDate
+	public virtual DateTime Created_Date
 	{
 		get;
 		set;
 	}
 
-	private Double shippingFees
+	public virtual double Shipping_Fee
 	{
 		get;
 		set;
 	}
 
-	private Double taxes
+	public virtual double Tax
 	{
 		get;
 		set;
 	}
 
-	private string paymentDate
+	public virtual DateTime Payment_Date
 	{
 		get;
 		set;
 	}
 
-	private Double paymentAmount
+	public virtual Double Payment_Amount
 	{
 		get;
 		set;
 	}
 
-	private Double orderTotal
+	public virtual double Order_Subtotal
 	{
 		get;
 		set;
 	}
 
-    public override string ToString()
-    {
+	public virtual double Order_Total
+	{
+		get;
+		set;
+	}
+
+	public virtual DateTime Date_Received
+	{
+		get;
+		set;
+	}
+
+	public virtual string Status
+	{
+		get;
+		set;
+	}
+
+	public virtual void ToString()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void PurchaseOrder()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	private void PurchaseOrder()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void CompleteOrder()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void Save()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void Get(int) PurchaseOrders_Id)
+	{
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void GetAll()
+	{
 		throw new System.NotImplementedException();
 	}
 
