@@ -40,12 +40,7 @@ public class Employee : DBConnection
 		get;
 		set;
 	}
-
-	public virtual Login Login
-	{
-		get;
-		set;
-	}
+    
 
 	private Employee(string fn, string ln, int id, int employeeCode)
 	{

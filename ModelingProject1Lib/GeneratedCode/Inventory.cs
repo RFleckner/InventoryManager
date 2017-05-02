@@ -61,7 +61,7 @@ public class Inventory : DBConnection
 	{
 	}
 
-	private Inventory()
+	private Inventory(int Inventory_Id)
 	{
 	}
 
@@ -95,7 +95,7 @@ public class Inventory : DBConnection
 		throw new System.NotImplementedException();
 	}
 
-	public virtual void Get(int( Inventory_Id)
+	public virtual void Get(int Inventory_Id)
 	{
 		throw new System.NotImplementedException();
 	}

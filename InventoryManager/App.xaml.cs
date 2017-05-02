@@ -26,11 +26,15 @@ namespace InventoryManager
             mainWindow.Left = 400;
             mainWindow.Show();
         */  
+        
+            /*
             EmployeeLogIn window = new EmployeeLogIn();
             window.Top = 100;
             window.Left = 400;
             window.Show();
-        /*
+            */
+        
+            /*
             EmployeeInterface employeewindow = new EmployeeInterface();
             employeewindow.Top = 100;
             employeewindow.Left = 500;
